@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing : border-box;
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(-45deg, #00A3B3, #17EBFF);
+    background-attachment: fixed;
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, #ff3c00, #ffae00);
+    height: 70px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 0px 10px #00484ec9;
+}
+
+header h1 {
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+    text-shadow: 1px 2px 5px #8619008c;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0px 0px 15px #00484ec9;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+
+main img#perfil {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+main a{
+    text-decoration: none;
+    color: #ff3c00;
+    text-shadow: 0px 0px 1px #8b2100;
+}
+
+main h2{
+    color: #f7691d;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ff3c00;
+    padding: 20px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main aside{
+    background-color: rgba(226, 226, 226, 0.658);
+    border-radius: 0px 40px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.322);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+main > aside > h2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.116), transparent);
+    padding: 0px 0px 0px 30px;
+    margin: 10px 0px 20px -10px;
+    text-align: left;
+}
+
+aside p {
+    padding: 10px;
+}
+
+aside a:hover {
+    font-size: 1.03em;
+    text-decoration: underline;
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #ff3c00, #ffae00);
+    height: 40px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+}
+
+footer > p{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.692);
+    text-shadow: 0px 0px 2px black;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Mídias</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Aumente e diminui o tamanho do navegador, ou abra o site com dispositivos diferentes.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Grande">
+        
+    </picture>
+    
+    <h1>Reproduzindo Aúdio</h1>
+    <!--<audio src="midia/Believe (Instrumental) - NEFFEX.mp3" controls autoplay></audio>-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Believe (Instrumental) - NEFFEX.mp3" type="audio/mpeg">
+        <p>A execução do aúdio falhou, <a href="midia/Believe (Instrumental) - NEFFEX.mp3">baixe o MP3 aqui.</a></p>
+    </audio>
+</body>
+</html> 

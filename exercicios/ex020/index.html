@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses.</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: blueviolet;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            background-image: linear-gradient(-45deg, #00A3B3, #17EBFF);
+        }
+        div > p{
+            display: none;
+        }
+        div:hover{
+            background-image: linear-gradient(-45deg, yellow, blue);
+        }
+        div:hover > p{
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Jogo das Cartas</h1>
+    <br>
+    <h2>Escolha uma Carta! :D</h2>
+
+    <div>1<p>Ops, carta errada!</p></div>
+    <div>2 <p>Ops, carta errada!</p></div>
+    <div>3 <p>Você escolheu a carta certa!</p></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Tudo que é id = em CSS é #
+Tudo que é class = em CSS é .*/
+body{
+    background-color: rgb(175, 255, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color:rgb(0, 59, 59)
+}
+h1#principal {
+    text-align: center;
+    font-size: 3em;
+}
+h2{
+    color:rgb(0, 87, 87)
+}
+
+.basico{
+    color: rgb(0, 87, 87);
+}
+.intermediario{
+    color: rgb(86, 87, 0);
+}
+.avancado{
+    color: rgb(87, 0, 0);
+}
+.destaque{
+    background-color: rgba(229, 255, 0, 0.61);
+}
