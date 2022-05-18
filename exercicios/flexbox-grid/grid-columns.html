@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas e Colunas Virtuais.</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: yellow;
+            grid-column: 1/3;
+        }
+
+        main{background-color: blue;
+            grid-column: 1/2
+        }
+
+        aside{
+            background-color: green;
+            grid-column: 2/3
+            
+            }
+        footer{
+            background-color: red;
+            grid-column: 1/3;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
