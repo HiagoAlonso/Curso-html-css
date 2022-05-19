@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1° Exercício de Grid</title>
+    <style>
+        header{
+            background-color: red;
+            grid-area: header;
+        }
+        main{
+            background-color: blue;
+            grid-area: main;
+        }
+        section#rodape{
+            background-color: blueviolet;
+            grid-area: footer;
+        }
+        section#leftside{
+            background-color: aqua;
+            grid-area: leftside;
+        }
+        section#rightside{
+            background-color: aquamarine;
+            grid-area: rightside;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-areas: 
+            "header header header"
+            "leftside main rightside"
+            "footer footer footer";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main></main>
+        <section id="leftside"></section>
+        <section id="rightside"></section>
+        <section id="rodape"></section>
+    </div>
+
+</body>
+</html>

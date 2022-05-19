@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2° Exercício de Grid</title>
+    <style>
+
+        div#title{
+            background-color: blue;
+            grid-area: title;
+        }
+        div#social{
+            background-color: red;
+            grid-area: social;
+        }
+        div#circle{
+            background-color: black;
+            grid-area: circle;
+        }
+        div.container{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 20vw 10vw;
+            grid-template-areas: 
+            "circle title"
+            "circle social";
+            margin: 5vw 5vw 5vw 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="circle"></div>
+        <div id="title"></div>
+        <div id="social"></div>
+    </div>
+</body>
+</html>
