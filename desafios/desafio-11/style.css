@@ -13,6 +13,7 @@
     --cor5: #7F4216;
     --cor6: #4A1D00;
     --font1: 'Comfortaa', cursive;
+    --font2: font-family: 'Raleway', sans-serif;
 }
 
 *{
@@ -22,7 +23,7 @@
 body{
     background-image: linear-gradient(45deg, black, var(--cor2), var(--cor1));
     background-attachment: fixed;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font2);
 }
 
 header{
@@ -34,7 +35,7 @@ header{
     font-family: 'Times New Roman', Times, serif;
 }
 header > img{
-    height: 9vh;
+    height: 10vh;
 }
 
 nav > a{
@@ -52,12 +53,64 @@ nav > a:hover{
 }
 
 main{
+    background: rgba(0, 0, 0, 0.308) url(images/lagos_e_pedras_2.jpg) center center/cover fixed;
     border-top: 0.1px solid rgb(48, 48, 48);
     border-bottom: 0.1px solid rgb(48, 48, 48);
     box-shadow: inset 0px 0px 8px black;
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.308);
 }
+
+section#cont-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 100px;
+}
+
+section#cont-principal > img{
+    width: 25vw;
+    height: 10vw;
+}
+
+div#cont-prin-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+div#cont-prin-escrito > h1{
+    font-family: var(--font1);
+    font-size: 3em;
+    font-weight: 400;
+}
+
+div#cont-prin-escrito > h2{
+    font-family: var(--font1);
+    color: lightgray;
+    font-weight: 200;
+    font-size: 1.5em;
+}
+
+div#cont-prin-escrito > a{
+    background-color: lightgray;
+    color: black;
+    font-family: var(--font1);
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 0px 1px black;
+    font-weight: 500;
+    padding: 5px; 
+    border-radius: 0px 5px;
+    width: 100px;
+    height: 25px;
+}
+div#cont-prin-escrito > a:hover{
+    background-color: white;
+}
+
 
 footer{
     color: var(--cor5);
@@ -73,41 +126,40 @@ footer > p#titulo-rodape{
     font-size: 3em;
 }
 
-
-
 @media (max-width: 500px){
+
     nav > a{
         margin: 10px;
     }
-}
 
-@media (max-width: 385px){
+    @media (max-width: 385px){
 
-    header{
-        height: 25vh;
-        flex-wrap: wrap;
-    }
-
-    footer > p#titulo-rodape{
-        font-size: 2em;
-    }
-
-    nav > a{
-        margin: 15px;
-    }
-    @media (max-width: 362px){
-        nav > a{
-            margin: 11px;
+        header{
+            height: 25vh;
+            flex-wrap: wrap;
         }
-    }
-        @media (max-width: 329px){
+
+        footer > p#titulo-rodape{
+            font-size: 2em;
+        }
+
+        nav > a{
+            margin: 15px;
+        }
+        @media (max-width: 362px){
             nav > a{
-                margin: 7px;
+                margin: 11px;
             }
         }
-            @media (max-width: 297px){
+            @media (max-width: 329px){
                 nav > a{
-                    margin: 3px;
+                    margin: 7px;
                 }
             }
+                @media (max-width: 297px){
+                    nav > a{
+                        margin: 3px;
+                    }
+                }
+    }
 }
