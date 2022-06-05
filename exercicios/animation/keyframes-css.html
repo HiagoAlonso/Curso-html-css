@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução: Keyframes</title>
+
+    <style>
+        @keyframes animation{
+            
+            50%{
+                background-color: rgb(255, 0, 255);
+                width: 80vw;
+                height: 10vw;
+                border-radius: 0px 50px;
+            }
+
+            75%{
+                background-color: rgb(83, 0, 83);
+                width: 10vw;
+                height: 90vh;
+            }
+
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #main {
+            margin: auto;
+            margin-top: 30px;
+            width: 40vw;
+            height: 40vw;
+            background-color: purple;
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+            border: 2px solid gold;
+            box-shadow: inset 0px 0px 7px black;
+            border-radius: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <main id="main">
+
+    </main>
+</body>
+</html>

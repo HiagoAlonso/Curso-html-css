@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butão do League Of Legends</title>
+    <style>
+
+        @keyframes animationClip{
+            0% {
+                clip-path: polygon(0% 30%, 15% 0%, 100% 0%, 100% 70%, 85% 100%, 0% 100%);
+            }
+            0.1%{
+                clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%);
+            }
+            100% {
+
+            }
+        }
+
+        html,  body, main {
+            width: 98%;
+            height: 98%;
+            background-color: #071319;
+        }
+
+        main {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #button{
+            background-color: rgb(11, 198, 227); 
+            width: 200px;
+            height: 50px;
+            box-shadow: inset 0px 0px 2px black;
+            text-align: center;
+
+            font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+            line-height: 49px;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        #button:hover {
+            background-color: rgb(19, 216, 246);
+        }
+
+        #border-button {
+            width: 198px;
+            height: 48px;
+            border: 1px solid black;
+            box-shadow: inset 0px 0px 1px black;
+        }
+
+        .clip{
+            clip-path: polygon(0% 30%, 15% 0%, 100% 0%, 100% 70%, 85% 100%, 0% 100%);
+        }
+
+        .clip:hover {
+            animation-name: animationClip;
+            animation-duration: 560s;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="button"><div id="border-button" class="clip">Logar</div></div>
+    </main>
+</body>
+</html>
