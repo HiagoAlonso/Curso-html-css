@@ -12,6 +12,7 @@
         }
 
         table {
+            position: relative;
             border-collapse: collapse;
             width: 450px;
         }
@@ -20,6 +21,12 @@
             border: 1px solid black;
             padding: 8px;
             text-align: center;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(78, 78, 78);
         }
 
         thead, tfoot {

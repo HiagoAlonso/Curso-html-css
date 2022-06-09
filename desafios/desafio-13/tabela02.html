@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outra Tabela</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-spacing: 5px;
+            width: 600px; height: 200px;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.507);
+        }
+
+        td:hover {
+            background-color: rgba(137, 43, 226, 0.527);
+            box-shadow: 0px 0px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">A
+            <td rowspan="4">B
+        <tr>
+            <td rowspan="4">C
+            <td>D
+            <td>E
+            <td>F
+
+        <tr>
+            <td>G
+            <td>H
+            <td>I
+        <tr>
+            <td>J
+            <td>K
+            <td>L
+        <tr>
+            <td colspan="4">M
+        </tr>
+    </table>
+</body>
+</html>

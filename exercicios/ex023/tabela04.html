@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Grupo em Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total de Filmes</th>
+                <td>48</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th scope="col">Grupos
+                <th scope="col">Nomes
+                <th scope="colgroup" colspan="3">Filmes
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres
+                <td>Ana Maria Santos
+                <td>Alien
+                <td>Rambo
+                <td>Vingadores
+            
+            <tr>
+                <td>Beatriz Souza
+                <td>Hulk
+                <td>Inception
+                <td>Batman
+            
+            <tr>
+                <td>Claudia Melo
+                <td>Oblivion
+                <td>Matrix
+                <td>Big Hero
+            
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens
+                <td>Bruno Mendonça
+                <td>Intocáveis
+                <td>Amnésia
+                <td>Gladiador
+            
+            <tr>
+                <td>Daniel Lourenço
+                <td>Wall-E
+                <td>Oldboy
+                <td>Dangal
+            
+            <tr>
+                <td>Fabiano Mota
+                <td>Star Wars 5
+                <td>Taxi Drive
+                <td>Toy Story
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            background-color: rgb(228, 228, 228);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        caption {
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            letter-spacing: 0.2em;
+        }
+
+        .cgrupo {
+            background-color: rgb(37, 122, 197);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome
+            <th scope="col">Sexo
+            <th scope="col">Idade
+            <th scope="col">Profissão
+        
+        <tr>
+            <td>Ana Maria
+            <td>F
+            <td>25
+            <td>Jornalista
+
+        <tr>
+            <td>Kássia Braga
+            <td>F
+            <td>21
+            <td>Vendendora
+        <tr>
+            <td>Fernando Loretto
+            <td>M
+            <td>32
+            <td>Empresário
+        <tr>
+            <td>Hiago C. Alonso
+            <td>M
+            <td>18
+            <td>Programador
+        <tr>
+            <td>Rodrigo Mayer
+            <td>M
+            <td>65
+            <td>Gerente Regional
+        </tr>
+    </table>
+</body>
+</html>
