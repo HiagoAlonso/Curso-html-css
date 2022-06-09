@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Tabela</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        .enegrecido {
+            background-color: rgb(211, 211, 211);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            /*vertical-align: bottom; top; middle;*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <table>
+        <tr class="enegrecido">
+            <td>A1
+            <td>B1
+            <td>C1
+        <tr>
+            <td>A2
+            <td>B2
+            <td>C2
+        <tr class="enegrecido">
+            <td>A3
+            <td>B3
+            <td>C3
+        <tr>
+            <td>A4
+            <td>B4
+            <td>C4
+    </table>
+
+    <!--
+        TABLES
+            TABLE ROWS
+                TABLE HEADER
+                TABLE DATA
+
+        CUIDADO com a HIERARQUIA de TABELAS!
+            É preterível o fechamento, mas se estiver semânticamente errado, pode dar ruim.
+    -->
+</body>
+</html>
