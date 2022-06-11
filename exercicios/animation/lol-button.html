@@ -19,6 +19,53 @@
             }
         }
 
+        @keyframes animationBorder{
+
+            20% {
+                box-shadow: 1px -1px 15px green;
+            }
+            40% {
+                box-shadow: 1px 1px 10px green;
+            }
+            60% {
+                box-shadow: -1px 1px 15px green;
+            }
+            80% {
+                box-shadow: -1px -1px 10px green;
+            }
+        }
+
+        
+        @keyframes animationBorderHover{
+
+            20% {
+                box-shadow: 1px -1px 17px rgb(0, 204, 255);
+                text-shadow: 0px 0px 7px rgb(0, 204, 255);
+                color: rgb(0, 204, 255);
+                border: 1px solid rgb(0, 204, 255);
+            }
+            40% {
+                box-shadow: 1px 1px 12px rgb(0, 204, 255);
+                text-shadow: 0px 0px 7px rgb(0, 204, 255);
+                color: rgb(0, 204, 255);
+                border: 1px solid rgb(0, 204, 255);
+            }
+            60% {
+                box-shadow: -1px 1px 17px rgb(0, 204, 255);
+                text-shadow: 0px 0px 7px rgb(0, 204, 255);
+                color: rgb(0, 204, 255);
+                border: 1px solid rgb(0, 204, 255);
+            }
+            80% {
+                box-shadow: -1px -1px 12px rgb(0, 204, 255);
+                text-shadow: 0px 0px 7px rgb(0, 204, 255);
+                color: rgb(0, 204, 255);
+                border: 1px solid rgb(0, 204, 255);
+            }
+        }
+
+
+
         html,  body, main {
             width: 98%;
             height: 98%;
@@ -67,11 +114,39 @@
             animation-duration: 560s;
         }
 
+        .button {
+            text-align: center;
+            background-color: black;
+            box-shadow: 0px 0px 7px green;
+            text-shadow: 0px 0px 7px green;
+            border: 1px solid green;
+            color: green;
+            animation: animationBorder 10s infinite;
+
+            
+            font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+            line-height: 49px;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            animation: animationBorderHover 10s infinite;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
     <main>
-        <div id="button"><div id="border-button" class="clip">Logar</div></div>
+        <div id="lol">
+            <div id="button"><div id="border-button" class="clip">Logar</div></div>
+        </div>
+        <div id="c-137">
+            <div class="button">Jogar</div>
+        </div>
     </main>
 </body>
 </html>

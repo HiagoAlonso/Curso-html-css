@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Repeat e Bordas</title>
+    <style>
+        body {
+            display: grid;
+            height: 100vh;
+            place-items: center;
+            background-color: black;
+        }
+        .c-box {
+            background-image: url(rick.jpg);
+            background-size: 15px;
+            background-repeat: round;
+
+            overflow: hidden;
+            resize: both;
+
+            height: 25vh;
+            width: 50vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .c-box::before {
+            content: '';
+            position: absolute;
+            background-color: white;
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+        }
+
+        .c-content {
+            z-index: 1;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="c-box">
+            <p class="c-content">Lorem ipsum</p>
+        </div>
+    </main>
+</body>
+</html>
