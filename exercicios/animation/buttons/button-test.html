@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Estilo de Borda</title>
+    <style>
+
+        :root {
+            --blue: #4612B5;
+            --blueviolet: #7913BF;
+            --violet: #961AA8;
+            --redviole: #BF1393;
+            --red: #B5123A;
+        }
+
+        @keyframes button-animation{
+            0% {
+                text-shadow: 0 0 3px #0059ff;
+                background-color: #0059ff;
+                box-shadow: 0 0 7px #0059ff;
+                color: #0059ff;
+            }
+            100% {
+                text-shadow: 0 0 3px #ff0000;
+                background-color: #ff0000;
+                box-shadow: 0 0 7px #ff0000;
+                color: #ff0000;
+            }
+        }
+
+        @keyframes main-animation{
+            0% {
+                box-shadow: 0 0 7px #0059ff;
+            }
+            100% {
+                box-shadow: 0 0 7px #ff0000;
+            }
+        }
+
+        * {
+            padding: 0; margin: 0; box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #27282c;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: main-animation 100s infinite;
+            margin: auto;
+        }
+
+        .button {
+            position: relative;
+            background-color: #444;
+            font-size: 1.5em;
+            font-weight: 200;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            text-shadow: 0 0 7px rgba(0, 0, 0, 0.301);
+            padding: 10px 30px;
+            margin: 20px;
+            transition: 0.5s;
+            color: white;
+            animation: button-animation 100s infinite;
+        }
+
+        .button:hover{
+            letter-spacing: 0.3em;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute; 
+            inset: 2px;
+            background-color: #27282c;
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="button"><span>Button</span></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
