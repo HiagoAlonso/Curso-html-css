@@ -11,6 +11,9 @@
             padding: 0px;
             box-sizing: border-box;
         }
+        body {
+            background-color: black;
+        }
 
         header{
             background-color: yellow;
@@ -30,15 +33,34 @@
             background-color: red;
             grid-area: footer;
         }
+        #d1 {
+            background-color: burlywood;
+            grid-area: d1;
+        }
+        #d2 {
+            background-color: brown;
+            grid-area: d2;
+        }
+        #d3 {
+            background-color: aqua;
+            grid-area: d3;
+        }
+        #d4 {
+            background-color: azure;
+            grid-area: d4;
+        }
 
         .container{
+            width: 50%;
+            height: 50vh;
             display: grid;
-            grid-template-columns: 3fr 1fr;
-            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 20% 40% 30% 10%;
             grid-template-areas:
-            "header aside"
-            "main aside"
-            "footer footer";
+            "header aside aside"
+            "header main d2"
+            "header d3 d4"
+            "header footer footer";
         }
 
     </style>
@@ -49,6 +71,10 @@
         <main></main>
         <aside></aside>
         <footer></footer>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
     </div>
 </body>
 </html>
